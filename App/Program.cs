@@ -22,8 +22,7 @@ partial class Program
                 read.AddCommand<ReadFileCommand>("file")
                     .WithAlias("f")
                     .WithDescription("Read a file")
-                    // .WithExample("read file", "path/to/file.txt", "--max-read-lines 3")
-                    ;
+                    .WithExample("read", "file", "path/to/file.txt", "--max-read-lines", "3");
             });
 
             #if DEBUG
